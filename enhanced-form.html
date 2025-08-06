@@ -1,0 +1,135 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web dev week 2</title>
+
+    <style>
+      th {
+        font-size: 1.7rem;
+      }
+      td {
+        font-size: 1.2rem;
+      }
+      td,
+      th {
+        padding: 2rem;
+        border: 1px solid black;
+      }
+      table {
+        border-collapse: collapse;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Web dev week 2</h1>
+    </header>
+
+    <main>
+      <section>
+        <h2>List</h2>
+        <h3>Unordered list</h3>
+        <ul>
+          <li>List 1</li>
+          <li>List 2</li>
+          <li>List 3</li>
+        </ul>
+
+        <h3>Ordered list</h3>
+        <ol type="a">
+          <li>List A</li>
+          <li>List B</li>
+          <li>List C</li>
+        </ol>
+      </section>
+
+      <section>
+        <h2>Table</h2>
+
+        <table>
+          <tr>
+            <th>S/n</th>
+            <th>Name</th>
+            <th>Age</th>
+          </tr>
+
+          <tr>
+            <td>1</td>
+            <td>Joe Obi</td>
+            <td>19</td>
+          </tr>
+
+          <tr>
+            <td>2</td>
+            <td>Fred Mike</td>
+            <td>22</td>
+          </tr>
+
+          <tr>
+            <td>3</td>
+            <td>Ola Ben</td>
+            <td>22</td>
+          </tr>
+        </table>
+      </section>
+
+      <section>
+        <h2>Media</h2>
+        <img
+          src="Ayan.jpg"
+          alt="a cool anime character"
+          style="width: 450px; height: 450px"
+        />
+        <video
+          src="tie.mp4"
+          alt="a man knotting a tie"
+          style="width: 450px; height: 450px"
+          controls
+          autoplay
+          muted
+        ></video>
+      </section>
+
+      <section>
+        <h2>Form</h2>
+        <form action="">
+          <input
+            type="text"
+            value="Do take your time to fill this form, thank you."
+            readonly
+          />
+          <label for="name">Name:</label>
+          <input type="text" required placeholder="Enter you full name" id="name"/>
+
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            placeholder="Enter your email"
+            required
+            autocomplete="email"
+            id="email"
+          />
+
+          <label for="tel">Tel:</label>
+          <input type="tel" pattern="[0-9]{11}" required id="tel"/>
+
+          <label for="password">Password</label>
+          <input
+            type="password"
+            placeholder="Enter a valid password"
+            pattern="[0-9a-z]{9}"
+            required
+            id="password"
+          />
+
+          <label for="submit"></label>
+          <input type="submit" id="submit" value="Submit Form"/>
+        </form>
+      </section>
+    </main>
+
+    <footer>&copy; 2025. Ereyiga</footer>
+  </body>
+</html>
